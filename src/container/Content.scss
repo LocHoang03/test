@@ -13,6 +13,14 @@ $color-program-2: #face0f;
     margin-top: 20px;
 }
 
+.space-120px {
+    height: 120px;
+}
+
+.space-100px {
+    height: 100px;
+}
+
 .content-wrapper {
     width: 80%;
     margin-top: 30px;
@@ -33,8 +41,9 @@ $color-program-2: #face0f;
             margin-top: 30px;
             list-style: none;
             padding-right: 20px;
+            padding-left: 0;
             .item-wrapper-content {
-                margin-top: 30px;
+                margin-top: 20px;
                 font-size: 19px;
                 line-height: 1.9rem;
                 position: relative;
@@ -492,6 +501,170 @@ $color-program-2: #face0f;
                 }
 
                 .text-achie {
+                }
+            }
+        }
+    }
+}
+
+// response user
+
+.response-users {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkEU7Z7QKWBMa8c-ALQoZWjfKeGXEeNXsSw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content-res-users {
+        width: 80%;
+        text-align: center;
+
+        .title-res-users {
+            & h2 {
+                color: $color-program-1;
+
+                & span {
+                    color: $color-program-2;
+                }
+            }
+        }
+
+        .video-res-users {
+            display: flex;
+            width: 100%;
+            margin-top: 80px;
+            .video-res-user-child {
+                margin: 0 10px;
+
+                & iframe {
+                    border-radius: 20px;
+                }
+
+                & h5 {
+                    color: $title-color;
+                    margin-top: 30px;
+                    line-height: 3;
+                }
+            }
+        }
+
+        .response-see-more {
+            margin-bottom: 100px;
+            margin-top: 30px;
+
+            & a {
+                background-color: $color-program-2;
+                border-radius: 10px;
+                padding: 12px 18px;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+                transition: all 0.35s;
+            }
+
+            & a:hover {
+                background-color: $title-color;
+            }
+        }
+    }
+}
+
+//  form singup content
+
+.container-register-for-consultation {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAlv5MuzmeZX45BTiKLH577wpuSbpMbh9XBQ&usqp=CAU');
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .register-for-consultation {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 120px;
+        .title-advise {
+            & h2 {
+                color: $title-color;
+                font-size: 34px;
+                font-weight: bold;
+            }
+        }
+
+        .second-title-advise {
+            & p {
+                color: $title-color;
+                font-size: 18px;
+                margin-top: 34px;
+            }
+        }
+
+        .video-form-sign-up {
+            display: flex;
+            .video-sign-up {
+                & iframe {
+                    border-radius: 20px;
+                }
+            }
+
+            .form-sign-up {
+                text-align: left;
+
+                & #form-1 {
+                    margin-left: 30px;
+
+                    .form-signup-group {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+
+                        & input {
+                            width: 80%;
+                            padding: 14px;
+                            border-radius: 40px;
+                            border: none;
+                            outline: none;
+                        }
+
+                        & input::placeholder {
+                            font-size: 14px;
+                        }
+
+                        & span {
+                            color: red;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .btn-signup-form {
+                        width: 80%;
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        & button {
+                            height: 44px;
+                            padding: 0px 24px;
+                            border-radius: 22px;
+                            border: none;
+                            background-color: $title-color;
+                            color: white;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+
+                        & span {
+                            color: red;
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 15px;
+                            font-weight: bold;
+                            font-size: 18px;
+                        }
+                    }
                 }
             }
         }

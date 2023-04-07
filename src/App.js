@@ -9,6 +9,8 @@ import ReasonContent from './container/ReasonContent';
 import TeacherTeam from './container/TeacherTeam';
 import CreativeSpace from './container/CreativeSpace';
 import Achievement from './container/Achievement';
+import ResponseUsers from './container/ResponseUsers';
+import FormSignUp from './container/FormSignUp';
 /* Option 2: Import via CSS */
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
                 <TeacherTeam />
                 <CreativeSpace />
                 <Achievement />
+                <ResponseUsers />
+                <FormSignUp />
             </div>
         </div>
     );
